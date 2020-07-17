@@ -13,5 +13,5 @@ In step 4, the descriptive name for the columns on mean and standard deviation a
 
 In step 5, a data frame to identify the subject for each row is created similar to the training and test labels and merged into merged_subject. The column which contains numbers uniquely identifying subjects is named as ‘subject’ and combined with merged_dataset3 to form merged_dataset4. The average of each of the mean and standard deviation columns grouped by each activity and each subject is calculated by first using group_by() function followed by summarise() from the dplyr package into merged_dataset5 data frame. To create a tidy dataset which only has one observation per row, pivot_longer() from tidyr package is used on merged_dataset5 to combine all the columns names except for subject and activity into 'variable' columns and their corresponding values into the 'average' column. 
 
-In step 6, the resulting tidy data frame is exported as tidy_dataset.txt. 
+In step 6, the resulting tidy data frame is exported as UCI_HAR_tidy_dataset.txt. 
 
