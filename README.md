@@ -11,7 +11,7 @@ In step 3, the training labels and test labels are combined and added to the dat
 
 In step 4, the descriptive name for the columns on mean and standard deviation are extracted and used as column names for the measurements. 
 
-In step 5, a column to identify subject is extracted and added to the data frame. The average of each of the mean and standard deviation columns grouped by each activity and each subject is calculated and a tidy summary dataset is produced using the long format. 
+In step 5, a column to identify subject is extracted and added to the data frame. The average of each of the mean and standard deviation columns grouped by each activity and each subject is calculated and a tidy summary dataset is produced using the wide format. 
 
 In step 6, the resulting tidy data frame is exported as UCI_HAR_tidy_dataset.txt. 
 
