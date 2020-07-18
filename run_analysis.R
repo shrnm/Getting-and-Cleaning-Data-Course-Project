@@ -37,8 +37,7 @@ subject_test <- read.table('test/subject_test.txt')
 merged_subject <- rbind(subject_train, subject_test)
 names(merged_subject) <- 'subject'
 merged_dataset4 <- cbind(merged_subject, merged_dataset3)
-merged_dataset5 <- merged_dataset4 %>% group_by(subject, activity) %>% summarise(across(everything(),mean))
-tidy_dataset <- pivot_longer(merged_dataset5, -c(subject, activity), names_to = 'variable', values_to = 'average')
+tidy_dataset <- merged_dataset4 %>% group_by(subject, activity) %>% summarise(across(everything(),mean))
 
 #Step 6 - Output the tidy dataset as a txt file. 
 setwd(old.dir)
