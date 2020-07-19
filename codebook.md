@@ -6,12 +6,12 @@ The code book explains the terms used in the dataset in the following format:
   * description of column content 
     * list of values in the column
 
-The dataset has four columns, which are 'subject', 'activity', 'variable', and 'average'.
 
-* subject
+
+* subject (column 1)
   * unique identifier for subjects involved in the measurement
     *  1..30
-* activity
+* activity (column 2)
   * types of activity during which measurement was made 
     *  WALKING
     *  WALKING_UPSTAIRS
@@ -19,7 +19,7 @@ The dataset has four columns, which are 'subject', 'activity', 'variable', and '
     *   SITTING
     *  STANDING
     *   LAYING
-* variable
+* features measured (column 3-68)
   * The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). These signals were used to estimate variables of the feature vector for each pattern, and'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions. Mean and standard deviation were calculated for these signals, and '-mean()-' and '-std()-' are used to denoted these values, respectively. 
     *  tBodyAcc-mean()-X
     *  tBodyAcc-mean()-Y
@@ -88,6 +88,3 @@ The dataset has four columns, which are 'subject', 'activity', 'variable', and '
     *  fBodyBodyGyroJerkMag-mean()
     *  fBodyBodyGyroJerkMag-std()
 
-* average
-  * the average values for for each variable for each activity and each subject
-    *  -0.9900600..0.9375041
